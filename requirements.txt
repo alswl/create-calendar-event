@@ -1,0 +1,4 @@
+ipython==5.3.0
+ipdb
+exchangelib==1.10.7
+raven==6.1.0
