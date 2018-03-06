@@ -29,6 +29,7 @@ DEFAULT_INTERVAL_SECONDS = 10
 
 DEFAULT_SOCKET_TIMEOUT = 10
 DSN_TOKEN = os.environ.get('EXCHANGE_AUTO_FORWARD_DSN')
+ENV_PASSWORD = 'EXCHANGE_ORDER_PASSWORD'
 
 LOGGING = {
     'version': 1,
@@ -111,7 +112,7 @@ def main():
     parser.add_argument('--date', '-d', required=True)
     parser.add_argument('--duration', '-a', required=True, type=int)
     args = parser.parse_args()
-    password = os.environ.get('EXCHANGE_AUTO_FORWARD_PASSWORD')
+    password = os.environ.get(ENV_PASSWORD)
     if password is None:
         password = getpass.getpass('EXCHANGE password:')
 
