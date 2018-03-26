@@ -28,7 +28,7 @@ from dateutil import parser
 DEFAULT_INTERVAL_SECONDS = 10
 
 DEFAULT_SOCKET_TIMEOUT = 10
-DSN_TOKEN = os.environ.get('EXCHANGE_AUTO_FORWARD_DSN')
+DSN_TOKEN = os.environ.get('EXCHANGE_ORDER_DSN')
 ENV_PASSWORD = 'EXCHANGE_ORDER_PASSWORD'
 
 LOGGING = {
@@ -44,7 +44,7 @@ LOGGING = {
         'defaultHandler': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'defaultFormatter',
-            'filename': 'exchange-auto-forward.log',
+            'filename': 'exchange-order.log',
             'maxBytes': 1024 * 1024 * 5,
             'backupCount': 5,
         },
