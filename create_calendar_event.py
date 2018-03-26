@@ -25,7 +25,6 @@ from requests import ReadTimeout
 from urllib3.exceptions import ReadTimeoutError
 from dateutil import parser
 
-DEFAULT_INTERVAL_SECONDS = 10
 
 DEFAULT_SOCKET_TIMEOUT = 10
 DSN_TOKEN = os.environ.get('EXCHANGE_ORDER_DSN')
