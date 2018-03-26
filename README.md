@@ -2,7 +2,7 @@
 
 Auto ording room for exchange server.
 
-预定 Exchange / Outlook 下的自动化脚本。
+预定 Exchange / Outlook 下会议室的自动化脚本。
 Fuck 那些抢会议室的人。
 
 Usage:
